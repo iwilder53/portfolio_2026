@@ -1,0 +1,60 @@
+{
+  "Meta": {
+    "title": "バガリア ヤシュクマル | ポートフォリオ",
+    "description": "名古屋を拠点に、組込み・IoT、システム、Web/モバイル開発に携わるソフトウェアエンジニア。"
+  },
+  "Nav": {
+    "home": "ホーム",
+    "about": "自己紹介",
+    "gallery": "ギャラリー",
+    "blog": "ブログ",
+    "menu": "メニューを開閉"
+  },
+  "Clock": {
+    "nagoya": "日本・名古屋",
+    "nagpur": "インド・ナーグプル",
+    "toggle": "12/24時間表示を切り替え"
+  },
+  "Home": {
+    "greeting": "はじめまして、",
+    "role": "組込み・システム・Web/モバイルエンジニア",
+    "intro": "名古屋を拠点に活動するエンジニアです。組込みファームウェアとIoTから始まり、現在はAWS上のETLパイプライン構築、レガシーシステムの移行・保守、Webやモバイルアプリの開発まで幅広く手がけています。",
+    "ctaAbout": "自己紹介を見る",
+    "focus": "取り組んでいること",
+    "areas": {
+      "embedded": {
+        "title": "組込み",
+        "body": "ESP32ファームウェア、メッシュネットワーク、センサー、Modbus対応エネルギーメーター。"
+      },
+      "systems": {
+        "title": "システム",
+        "body": "COBOLからAWSへの移行、ETLパイプライン、JAXA D-NETのJava/Python保守。"
+      },
+      "webmobile": {
+        "title": "Web / モバイル",
+        "body": "Flutterアプリ、Next.js／MedusaJSのECサイト、WooCommerce。"
+      }
+    },
+    "contact": "お問い合わせ"
+  },
+  "About": {
+    "title": "自己紹介",
+    "summary": "2014年からフリーランスのソフトウェアエンジニアとして活動し、組込みファームウェア、IoT、Flutter（iOS/Android）、フルスタックWeb開発など幅広い経験を積んできました。2024年11月にFundasta株式会社に入社し、2025年11月から名古屋で勤務しています。AWSでのETLパイプライン構築、レガシーシステムの移行、JAXA D-NETの保守・改修に携わっています。特に組込みシステム開発に強い情熱があり、現在はReact、AWS、日本語を学習中で、将来はプロジェクトマネージャーを目指しています。",
+    "education": "学歴",
+    "certificates": "資格・認定",
+    "experience": "職務経歴",
+    "tabs": {
+      "embedded": "組込み",
+      "systems": "システム",
+      "webmobile": "Web / モバイル"
+    }
+  },
+  "ComingSoon": {
+    "title": "準備中",
+    "body": "このセクションは現在準備中です。",
+    "back": "ホームに戻る"
+  },
+  "Footer": {
+    "rights": "All rights reserved."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "Meta": {
+    "title": "Yashkumar Bagaria | Portfolio",
+    "description": "Software engineer across embedded/IoT, systems and web/mobile, based in Nagoya, Japan."
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "gallery": "Gallery",
+    "blog": "Blog",
+    "menu": "Toggle menu"
+  },
+  "Clock": {
+    "nagoya": "Nagoya, Japan",
+    "nagpur": "Nagpur, India",
+    "toggle": "Switch 12/24-hour format"
+  },
+  "Home": {
+    "greeting": "Hi, I'm",
+    "role": "Embedded, Web/Mobile & Systems engineer",
+    "intro": "I'm an engineer based in Nagoya, Japan. I started with embedded firmware and IoT, and today I build AWS data pipelines, modernise legacy systems, and ship web and mobile apps.",
+    "ctaAbout": "About me",
+    "focus": "What I work on",
+    "areas": {
+      "embedded": {
+        "title": "Embedded",
+        "body": "ESP32 firmware, mesh networks, sensors and Modbus-based energy meters."
+      },
+      "systems": {
+        "title": "Systems",
+        "body": "COBOL-to-AWS migration, ETL pipelines, and Java/Python maintenance for JAXA D-NET."
+      },
+      "webmobile": {
+        "title": "Web / Mobile",
+        "body": "Flutter apps, Next.js and MedusaJS e-commerce, and WooCommerce."
+      }
+    },
+    "contact": "Get in touch"
+  },
+  "About": {
+    "title": "About me",
+    "summary": "I started as a freelance developer in 2014 and have worked across embedded firmware, IoT, Flutter mobile apps and full-stack web. I joined Fundasta in November 2024 and have been based in Nagoya since November 2025, working on AWS ETL pipelines, legacy migration and maintenance of JAXA's D-NET system. Embedded systems remain my biggest passion. I'm currently learning React, AWS and Japanese, and I'm aiming to grow into a project manager role.",
+    "education": "Education",
+    "certificates": "Certificates",
+    "experience": "Experience",
+    "tabs": {
+      "embedded": "Embedded",
+      "systems": "Systems",
+      "webmobile": "Web / Mobile"
+    }
+  },
+  "ComingSoon": {
+    "title": "Coming soon",
+    "body": "This section is still under construction.",
+    "back": "Back to home"
+  },
+  "Footer": {
+    "rights": "All rights reserved."
+  }
+}
