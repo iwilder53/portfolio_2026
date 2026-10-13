@@ -9,8 +9,16 @@ import Footer from "@/components/Footer";
 import { site } from "@/content/site";
 import "../globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
-const notoJp = Noto_Sans_JP({ subsets: ["latin"], variable: "--font-jp", display: "swap" });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+const notoJp = Noto_Sans_JP({
+  subsets: ["latin"],
+  variable: "--font-jp",
+  display: "swap",
+});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -55,3 +63,4 @@ export default async function LocaleLayout({
     </html>
   );
 }
+export const instant = false;

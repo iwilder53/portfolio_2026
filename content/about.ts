@@ -12,6 +12,8 @@ export type Role = {
   bullets: L10nList;
   tags: string[];
 };
+
+
 /* 
 export const education = [
   {
