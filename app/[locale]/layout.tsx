@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { site } from "@/content/site";
+import "y2k-social-ui/theme.css";
 import "../globals.css";
 
 const inter = Inter({

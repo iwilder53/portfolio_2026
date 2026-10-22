@@ -1,32 +1,170 @@
 @import "tailwindcss";
 
 @theme {
-  /* Teal brand scale */
-  --color-brand-50: #f0fdfa;
-  --color-brand-100: #ccfbf1;
-  --color-brand-200: #99f6e4;
-  --color-brand-300: #5eead4;
-  --color-brand-400: #2dd4bf;
-  --color-brand-500: #14b8a6;
-  --color-brand-600: #0d9488;
-  --color-brand-700: #0f766e;
-  --color-brand-800: #115e59;
-  --color-brand-900: #134e4a;
+  /* MySpace-inspired blue palette */
+  --color-brand-50: #f0f7ff;
+  --color-brand-100: #dcecff;
+  --color-brand-200: #b8d7ff;
+  --color-brand-300: #8bbcff;
+  --color-brand-400: #5598f5;
+  --color-brand-500: #2866c7;
+  --color-brand-600: #2055aa;
+  --color-brand-700: #1c4588;
+  --color-brand-800: #193968;
+  --color-brand-900: #152c4d;
+
+  /* Retro accent colors */
+  --color-retro-pink: #ff8ac7;
+  --color-retro-lavender: #b8a0ff;
+  --color-retro-sky: #b8e0ff;
+  --color-retro-silver: #e5eaf2;
 
   /* Latin first, Japanese glyphs fall through to Noto Sans JP */
   --font-sans: var(--font-inter), var(--font-jp), ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
-  color-scheme: light; /* light mode only */
+  color-scheme: light;
+
+  /* MySpace-style design tokens */
+  --ms-bg: #dce8f5;
+  --ms-surface: #ffffff;
+  --ms-surface-alt: #eef5fc;
+  --ms-border: #9bb9dc;
+  --ms-text: #243b5c;
+  --ms-muted: #627b9d;
+  --ms-blue: #2866c7;
+  --ms-blue-dark: #194783;
+  --ms-pink: #ff8ac7;
+  --ms-shadow: 3px 3px 0 rgb(33 73 125 / 14%);
 }
 
+/* Page background */
 html {
   scroll-behavior: smooth;
+  background: var(--ms-bg);
+}
+
+body {
+  background:
+    radial-gradient(ellipse at top, #f5f9ff 0%, transparent 65%),
+    var(--ms-bg);
+  color: var(--ms-text);
+  font-family: var(--font-sans);
+}
+
+/* Classic glossy MySpace-style header */
+.ms-header {
+  color: white;
+  background: linear-gradient(
+    180deg,
+    #70a9ec 0%,
+    #397bd0 45%,
+    #2258a2 100%
+  );
+  border-bottom: 1px solid #194783;
+  box-shadow: 0 2px 5px rgb(20 49 91 / 20%);
+}
+
+/* Profile and content panels */
+.ms-panel {
+  background: var(--ms-surface);
+  border: 1px solid var(--ms-border);
+  box-shadow: var(--ms-shadow);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.ms-panel-title {
+  padding: 8px 12px;
+  color: white;
+  background: linear-gradient(180deg, #6099dc, #326cb5);
+  border-bottom: 1px solid #255895;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.ms-panel-body {
+  padding: 14px;
+}
+
+/* Glossy retro buttons */
+.ms-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  color: white;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #77b0f1, #2866c7);
+  border: 1px solid #1e559d;
+  border-radius: 4px;
+  box-shadow: inset 0 1px rgb(255 255 255 / 45%);
+  cursor: pointer;
+  transition: filter 120ms ease;
+}
+
+.ms-button:hover {
+  filter: brightness(1.08);
+}
+
+.ms-button:active {
+  background: linear-gradient(180deg, #2458a0, #397bd0);
+}
+
+.ms-button:focus-visible {
+  outline: 3px solid var(--ms-pink);
+  outline-offset: 3px;
+}
+
+/* Secondary pink accent */
+.ms-button-pink {
+  color: #562347;
+  background: linear-gradient(180deg, #ffd0e9, #ff8ac7);
+  border-color: #d66ba5;
+}
+
+/* Old-school profile links */
+.ms-link {
+  color: #2059a5;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.ms-link:hover {
+  color: #a42b78;
+}
+
+/* Small profile labels */
+.ms-badge {
+  display: inline-block;
+  padding: 3px 7px;
+  color: #234b80;
+  background: #e5f1ff;
+  border: 1px solid #b0cbed;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.ms-badge-pink {
+  color: #772c58;
+  background: #ffe0f0;
+  border-color: #f1a6cd;
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

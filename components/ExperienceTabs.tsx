@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { useLocale, useTranslations } from "next-intl";
 import { useUI, type ExperienceTab } from "@/store/ui";
 import { experience, pick } from "@/content/about";
+import { RetroBadge } from "y2k-social-ui";
 
 const tabs: ExperienceTab[] = ["embedded", "systems", "webmobile"];
 
@@ -79,12 +80,13 @@ export default function ExperienceTabs() {
             </ul>
             <div className="mt-4 flex flex-wrap gap-2">
               {role.tags.map((tag) => (
-                <span
+                <RetroBadge
+                  tone="neutral"
                   key={tag}
-                  className="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-medium text-brand-700"
+                  /*    className="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-medium text-brand-700" */
                 >
                   {tag}
-                </span>
+                </RetroBadge>
               ))}
             </div>
           </article>
