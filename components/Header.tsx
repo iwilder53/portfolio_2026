@@ -11,7 +11,6 @@ import WorldClock from "./WorldClock";
 const links = [
   { href: "/", key: "home" },
   { href: "/about", key: "about" },
-  { href: "/my_page", key: "my page" },
   { href: "/gallery", key: "gallery" },
   { href: "/blog", key: "blog" },
 ] as const;
